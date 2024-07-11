@@ -4,7 +4,7 @@ div>card {
 }
 
 .mold {
-  font-size: 1.5em;
+  font-size: 1.7em; /* Default font size */
   font-weight: bold;
   text-decoration-line: none;
   color: black;
@@ -38,15 +38,13 @@ div>card {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
-  #contact {
-    flex-direction: column;
+@media (max-width: 1200px) {
+  .navbar {
+    flex-direction: row;
+    padding: 15px;
   }
-}
-
-@media (max-width: 576px) {
-  #aboutText {
-    padding: 10px;
+  .mold {
+    font-size: 1.5em;
   }
 }
 
@@ -56,17 +54,25 @@ div>card {
     padding: 10px;
   }
   .mold {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 }
 
-@media (max-width: 1200px) {
-  .navbar {
-    flex-direction: row;
-    padding: 15px;
+@media (max-width: 768px) {
+  #contact {
+    flex-direction: column;
   }
   .mold {
-    font-size: 1.4em;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 576px) {
+  #aboutText {
+    padding: 10px;
+  }
+  .mold {
+    font-size: 1em;
   }
 }
 
@@ -76,6 +82,6 @@ div>card {
     height: 14px;
   }
   .mold {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
